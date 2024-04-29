@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 19/04</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="pt-Br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 19/03</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+
+        <style>
+            body {
+                background-color: #1b1b1b;
+                font-family: "Roboto", sans-serif;
+                padding-inline: 36px;
+            }
+
+            * {
+                color: #FFF;
+            }
+
+            a {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                color: rgb(206, 73, 206);
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                border-bottom: 1px solid rgb(206, 73, 206);
+                padding-bottom: 10px;
+            }
+
+            main{
+                display: flex;
+                justify-content: center;
+                gap: 90px;
+                flex-wrap: wrap;
+            }
+
+            h4{
+                font-size: 24px;
+            }
+
+            section{
+                border: 1px solid #FFF;
+                border-radius: 5px;
+                padding: 20px;
+            }
+
+
+            .bt {
+                padding: 15px;
+                background-color: rgb(206, 73, 206);
+                border: none;
+                border-radius: 5px;
+                font-weight: bold;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+
+
+            .inputContainer {
+                display: flex;
+                flex-direction: column;
+                width: fit-content;
+                gap: 4px;
+                font-size: 20px;
+                margin-block: 20px;
+            }
+
+            .inputContainer label {
+                cursor: pointer;
+            }
+
+            .inputContainer input {
+                padding: 5px;
+                color: #000;
+                font-size: 20px;
+            }
+
+
+            body section:nth-child(2) button {}
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Atividade 12/03</a>
+                </li>
+                <li>
+                    <a href="1903.html">Atividade 19/03</a>
+                </li>
+                <li>
+                    <a href="2603.html">Atividade 26/03</a>
+                </li>
+                <li>
+                    <a href="0904.html">Atividade 09/04</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section>
+                <h4>Exibindo mensagem</h4>
+
+                <button id="btMessage" class="bt">Show Hello World</button>
+            </section>
+
+            <section>
+
+                <h4>Somando de número</h4>
+
+
+                <div>
+                    <div class="inputContainer">
+                        <label for="n1">número 1</label>
+                        <input type="number" id="n1" value="0">
+                    </div>
+                    <div class="inputContainer">
+                        <label for="n2">número 2</label>
+                        <input type="number" id="n2" value="0">
+                    </div>
+                </div>
+
+                <button class="bt" id="btSomar">somar</button>
+
+                <div class="inputContainer">
+                    <label for="res">Resultado:</label>
+                    <input type="text" id="res" disabled>
+                </div>
+            </section>
+
+            <section>
+
+                <h4>Alterando propriedades com javascript</h4>
+
+                <div class="inputContainer">
+                    <label for="">Usando id</label>
+                    <button class="bt" id="btSection3">mudar cor pra vermelho</button>
+                </div>
+
+
+                <div class="inputContainer">
+                    <label for="">Usando classe</label>
+                    <button class="bt btSection3">mudar cor pra verde</button>
+                </div>
+
+
+                <div class="inputContainer">
+                    <label for="">Usando name</label>
+                    <button class="bt" name="btSection3">mudar cor pra vermelho</button>
+                </div>
+
+            </section>
+
+            <script src="./script.js"></script>
+
+        </main>
+    </body>
+
+    </html>
+</body>
+
+</html>
